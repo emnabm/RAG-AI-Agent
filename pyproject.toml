@@ -1,0 +1,27 @@
+[project]
+name = "rag-ai-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "emnabm", email = "benmahmoudemna57@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.142.2",
+    "inngest>=0.5.19",
+    "llama-index-core>=0.14.25",
+    "llama-index-readers-file>=0.7.0",
+    "openai>=3.26.0",
+    "python-dotenv>=1.2.4",
+    "qdrant-client>=1.19.1",
+    "streamlit>=1.65.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+rag-ai-agent = "rag_ai_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
